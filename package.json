@@ -1,13 +1,14 @@
 {
   "name": "server-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a basic template server side code using node.js and express.js. It also uses mongodb as database and jwt for authentication. It also uses cors for cross origin request.",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ahanul Hoque",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
