@@ -2,7 +2,7 @@
 
 ```
 
-npm i cors mongodb express jsonwebtoken dotenv
+npm i
 
 ```
 
