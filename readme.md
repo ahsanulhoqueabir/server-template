@@ -17,5 +17,7 @@ npm-debug*
 
 ```
 
+### Create a .env file and provide
 
-
+- MONGODB_URI
+- ACCESS_TOKEN_SECRET
