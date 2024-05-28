@@ -7,6 +7,10 @@ const port = process.env.port || 5000;
 const dotenv = require("dotenv");
 dotenv.config();
 const jwtRoute = require("../route/middleware.js");
+const busRoute = require("../route/bus.js");
+const employeRoute = require("../route/employe.js");
+const stoppageRoute = require("../route/stoppage.js");
+const Routes = require("../route/busRoute.js");
 
 const app = express();
 const corsOptions = { origin: true, Credential: true };
@@ -39,5 +43,9 @@ router.post("/jwt", (req, res) => {
 });
 app.use("/.netlify/functions/api/v1", router);
 app.use("/.netlify/functions/api/v1/verify", jwtRoute);
+app.use("/.netlify/functions/api/v1/bus", busRoute);
+app.use("/.netlify/functions/api/v1/employe", employeRoute);
+app.use("/.netlify/functions/api/v1/stoppage", stoppageRoute);
+app.use("/.netlify/functions/api/v1/busRoute", Routes);
 
 module.exports.handler = serverless(app);
