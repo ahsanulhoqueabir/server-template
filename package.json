@@ -19,6 +19,7 @@
     "mongoose": "^8.4.0",
     "netlify-cli": "^17.23.8",
     "netlify-lambda": "^2.0.16",
-    "serverless-http": "^3.2.0"
+    "serverless-http": "^3.2.0",
+    "ws": "^8.17.1"
   }
 }
